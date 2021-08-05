@@ -111,5 +111,25 @@ hr{
 }
 /* mediya quri mobile */
 @media only screen and(max-width:688px) {
-    
+    .container{
+        width: 100%;
+    }
+    .players,.blogs,.course{
+        
+        grid-template-columns: repeat(1,1fr);
+    }
+    .player,.blog{
+        flex-direction: column;
+    }
+}
+/* ------------------
+tablet divice 
+------------------*/
+@media only screen and(min-width:688px) and (max-width:992px) {
+    .container{
+        width: 100%;
+    }
+    .players,.new{
+        grid-template-columns: repeat(2,1fr);
+    }
 }
